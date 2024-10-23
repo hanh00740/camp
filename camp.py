@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import smtplib
+import pyvirtualdisplay
 #SERVER = "localhost"
 
 FROM = 'hanh00740@gmail.com'
