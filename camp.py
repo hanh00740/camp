@@ -6,13 +6,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import smtplib
+import logging
 import pyvirtualdisplay
 #SERVER = "localhost"
 
 FROM = 'hanh00740@gmail.com'
 TO = ["hanh00740@gmail.com"] # must be a list
 
-
+logging.basicConfig(level=logging.INFO)
+driver = webdriver.Chrome(service_log_path="chromedriver.log")
 # Start display
 display = pyvirtualdisplay.Display(visible=0, size=(1024, 768))
 display.start()
