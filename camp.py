@@ -12,11 +12,15 @@ FROM = 'hanh00740@gmail.com'
 TO = ["hanh00740@gmail.com"] # must be a list
 
 
+# Start display
+display = pyvirtualdisplay.Display(visible=0, size=(1024, 768))
+display.start()
+
 # Setup Chrome options (optional, for headless mode)
 chrome_options = Options()
-#chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
-#chrome_options.add_argument("--no-sandbox")
-#chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
 #chrome_options.add_argument("window-size=1200x600")
 #chrome_options.setPage
 #chrome_options.add_experimental_option("detach", True)
@@ -135,4 +139,5 @@ for date_element in date_elements:
     idx += 1
 # Close the browser session
 driver.quit()
+display.stop()
 
