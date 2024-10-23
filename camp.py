@@ -21,12 +21,14 @@ display.start()
 
 # Setup Chrome options (optional, for headless mode)
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
 chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
+
+
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument('--disable-gpu') 
 chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("--disable-extensions")
 #chrome_options.setPage
 #chrome_options.add_experimental_option("detach", True)
 
