@@ -14,7 +14,7 @@ FROM = 'hanh00740@gmail.com'
 TO = ["hanh00740@gmail.com"] # must be a list
 
 logging.basicConfig(level=logging.INFO)
-driver = webdriver.Chrome(service_log_path="chromedriver.log")
+driver = webdriver.Chrome()
 # Start display
 display = pyvirtualdisplay.Display(visible=0, size=(1024, 768))
 display.start()
