@@ -22,7 +22,7 @@ display.start()
 # Setup Chrome options (optional, for headless mode)
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--headless")  # Run in headless mode (no UI)
+chrome_options.add_argument("--headless=news")  # Run in headless mode (no UI)
 
 
 chrome_options.add_argument("--disable-dev-shm-usage")
